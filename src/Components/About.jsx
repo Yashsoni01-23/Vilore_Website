@@ -1,101 +1,109 @@
 import React from 'react';
-import { Globe, Factory, Award, MapPin, Truck, ShieldCheck } from 'lucide-react';
+import { Globe, Droplets, Compass, Zap, ShieldCheck, Sparkles } from 'lucide-react';
 
 const About = () => {
   return (
     <div className="bg-white min-h-screen text-gray-900">
       
-      {/* Refined Header - Minimal & Decent */}
-      <div className="bg-[#f8fafc] py-20 px-6 border-b border-gray-100">
-        <div className="max-w-4xl mx-auto text-center space-y-4">
-          <h1 className="text-3xl md:text-4xl font-serif tracking-[0.15em] text-gray-900 uppercase">
-            Our Story
-          </h1>
-          <div className="w-12 h-[2px] bg-blue-500 mx-auto"></div>
-          <p className="text-gray-500 tracking-[0.3em] text-[10px] uppercase font-bold">
-            Artisan Excellence since inception
-          </p>
-        </div>
+      {/* 1. Immersive Hero - Pure Visual (Text Overlay Removed) */}
+      <div className="relative h-[65vh] md:h-[80vh] overflow-hidden">
+        <img 
+          src="/6.png" 
+          alt="Vilore VX-540 Presence" 
+          className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-[2s]" 
+        />
+        {/* Subtle bottom gradient to blend with the next section */}
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
       </div>
 
-      {/* Leadership & Identity Section */}
-      <div className="max-w-7xl mx-auto px-6 py-24">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <div className="space-y-2">
-               <h2 className="text-xl font-serif italic text-gray-800">Founded by Manoj Soni</h2>
-               <h3 className="text-3xl font-serif text-gray-900 leading-tight">Crafting Memories <br/> in Jhansi, Uttar Pradesh.</h3>
+      {/* 2. Brand Identity Header - Text Moved Here */}
+      <div className="max-w-7xl mx-auto px-6 pt-20 pb-10 text-center space-y-4">
+          <h1 className="text-5xl md:text-7xl font-serif tracking-tighter text-gray-900 italic">
+            VILORE
+          </h1>
+          <div className="h-[1px] w-16 bg-blue-500 mx-auto"></div>
+          <p className="text-blue-600 tracking-[0.6em] text-[10px] uppercase font-black">
+            Define Your Presence
+          </p>
+      </div>
+
+      {/* 3. Core Narrative - The VX-540 Philosophy */}
+      <div className="max-w-7xl mx-auto px-6 py-20 text-gray-800">
+        <div className="grid md:grid-cols-2 gap-20 items-center">
+          <div className="space-y-10">
+            <div className="space-y-4 border-l-4 border-gray-900 pl-8">
+               <h3 className="text-[10px] tracking-[0.4em] text-gray-400 uppercase font-bold">The Signature Experience</h3>
+               <h2 className="text-4xl font-serif text-gray-900 leading-tight">
+                 Elegance in Every <br/> <span className="italic text-gray-500">Singular Note.</span>
+               </h2>
             </div>
             
-            <p className="text-gray-600 leading-relaxed font-light text-sm">
-              Vilore is the realization of <strong>Manoj Soni's</strong> vision to bring world-class perfumery to India. Rooted in Jhansi, we combine traditional aesthetics with modern olfactory science to create scents that define your presence.
+            <p className="text-gray-600 leading-loose text-lg font-light italic">
+              "VILORE VX-540 is a premium inspired fragrance designed to **Define Your Presence**. Crafted for those who seek elegance and long-lasting performance, this unisex perfume delivers a luxurious experience at an accessible price."
             </p>
+          </div>
+          
+          <div className="space-y-8 text-gray-600 font-light leading-relaxed text-base tracking-wide bg-[#f8fafc] p-10 rounded-sm border border-gray-50">
+             <p>
+               Perfect for both daily wear and special occasions, our composition transcends the ordinary. It is a masterful orchestration of rare essences, curated for the modern individual who understands that a scent is more than a fragrance—it is a statement.
+             </p>
+             <div className="pt-4">
+                <p className="text-[9px] tracking-[0.3em] uppercase font-black text-blue-600 italic">
+                  Define Your Presence. Always.
+                </p>
+             </div>
+          </div>
+        </div>
+      </div>
 
-            <div className="flex items-center gap-3 py-2 border-l-2 border-blue-500 pl-4 bg-blue-50/30">
-               <MapPin size={16} className="text-blue-500" />
-               <span className="text-[11px] font-bold uppercase tracking-widest text-gray-700">
-                 Corporate Office: Jhansi, UP
-               </span>
-            </div>
+      {/* 4. The Pillars of Luxury (Dark Section) */}
+      <div className="bg-[#060a11] py-32 px-6 text-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-20 space-y-4">
+             <h2 className="text-3xl font-serif italic text-white">The Art of Olfaction</h2>
+             <p className="text-[9px] tracking-[0.5em] text-gray-500 uppercase font-bold">Define Your Presence Through Quality</p>
           </div>
 
-          {/* Stats/Market Grid - Compact */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="p-6 border border-gray-100 bg-[#fafbfc]">
-              <h4 className="text-xl font-serif mb-1">USA</h4>
-              <p className="text-[9px] text-gray-400 uppercase tracking-widest font-black">International Export</p>
-            </div>
-            <div className="p-6 border border-gray-100 bg-[#fafbfc]">
-              <h4 className="text-xl font-serif mb-1">PAN India</h4>
-              <p className="text-[9px] text-gray-400 uppercase tracking-widest font-black">Nationwide Supply</p>
-            </div>
-            <div className="col-span-2 p-6 bg-[#060a11] text-white flex justify-between items-center">
-               <div>
-                  <h4 className="text-lg font-serif">Direct to Consumer</h4>
-                  <p className="text-[9px] text-blue-400 uppercase tracking-widest font-bold">Boutique Exclusive Pricing</p>
+          <div className="grid md:grid-cols-3 gap-16">
+            <div className="space-y-6 text-center group">
+               <div className="w-16 h-16 border border-white/10 rounded-full flex items-center justify-center mx-auto bg-white/5 group-hover:border-blue-500 transition-colors">
+                  <Sparkles size={24} strokeWidth={1} className="text-blue-500" />
                </div>
-               <ShieldCheck size={28} className="text-blue-500 opacity-50" />
+               <h4 className="text-xl font-serif">Luxurious Sillage</h4>
+               <p className="text-gray-400 font-light text-[10px] leading-relaxed italic uppercase tracking-widest">
+                 Designed to linger, ensuring you define your presence long after you leave the room.
+               </p>
+            </div>
+
+            <div className="space-y-6 text-center group">
+               <div className="w-16 h-16 border border-white/10 rounded-full flex items-center justify-center mx-auto bg-white/5 group-hover:border-blue-500 transition-colors">
+                  <ShieldCheck size={24} strokeWidth={1} className="text-blue-500" />
+               </div>
+               <h4 className="text-xl font-serif">Unisex Mastery</h4>
+               <p className="text-gray-400 font-light text-[10px] leading-relaxed italic uppercase tracking-widest">
+                 A gender-neutral masterpiece that allows anyone to define their presence with confidence.
+               </p>
+            </div>
+
+            <div className="space-y-6 text-center group">
+               <div className="w-16 h-16 border border-white/10 rounded-full flex items-center justify-center mx-auto bg-white/5 group-hover:border-blue-500 transition-colors">
+                  <Zap size={24} strokeWidth={1} className="text-blue-500" />
+               </div>
+               <h4 className="text-xl font-serif">Pure Concentration</h4>
+               <p className="text-gray-400 font-light text-[10px] leading-relaxed italic uppercase tracking-widest">
+                 Extraordinary performance met with accessible luxury to define your presence daily.
+               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Sourcing & Manufacturing */}
-      <div className="bg-[#060a11] text-white py-24 px-6 relative overflow-hidden">
-        <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
-          <div className="flex justify-center">
-             <Factory size={30} strokeWidth={1.5} className="text-blue-500" />
-          </div>
-          <div className="space-y-2">
-            <h2 className="text-[10px] tracking-[0.5em] text-gray-500 uppercase font-black">Artisan Laboratory</h2>
-            <h3 className="text-3xl font-serif italic text-white">Minati Perfumes, Gujarat</h3>
-          </div>
-          <p className="text-gray-400 font-light leading-loose text-sm italic">
-            "Our strategic partnership with <strong>Minati Perfumes</strong> ensures that every blend 
-            undergoes rigorous testing in Gujarat's finest laboratories, reaching the 
-            purity standards required for the global stage."
-          </p>
-
-          <div className="grid grid-cols-3 gap-6 pt-10 border-t border-white/5">
-            <div className="space-y-2">
-               <Award size={20} className="text-blue-500 mx-auto" />
-               <p className="text-[9px] tracking-widest uppercase font-bold text-gray-500">Pure Grade</p>
-            </div>
-            <div className="space-y-2">
-               <Globe size={20} className="text-blue-500 mx-auto" />
-               <p className="text-[9px] tracking-widest uppercase font-bold text-gray-500">Global Export</p>
-            </div>
-            <div className="space-y-2">
-               <Truck size={20} className="text-blue-500 mx-auto" />
-               <p className="text-[9px] tracking-widest uppercase font-bold text-gray-500">Secure Delivery</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Minimal Footer */}
-      <div className="py-12 text-center opacity-20">
-        <p className="text-[8px] tracking-[1em] uppercase font-black text-gray-900">Vilore Artisan © 2026</p>
+      {/* 5. Minimal Footer Branding */}
+      <div className="py-20 text-center space-y-6">
+           <h3 className="text-2xl font-serif text-gray-900 italic">A Legacy in Every Bottle.</h3>
+           <p className="text-gray-400 text-[9px] tracking-[1em] uppercase font-black">
+             Define Your Presence
+           </p>
       </div>
     </div>
   );
