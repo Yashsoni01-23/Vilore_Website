@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-10 grid md:grid-cols-2 gap-12 items-center w-full">
           <div className="space-y-8 animate-fade-in-left">
             <div className="space-y-4">
-               <h2 className="text-[11px] tracking-[0.8em] uppercase text-gray-500 font-bold">VILORE PRESENTS</h2>
+               <h2 className="text-[11px] tracking-[0.8em] uppercase text-gray-500 font-bold">VILOZE PRESENTS</h2>
                <h1 className="text-5xl md:text-7xl font-serif tracking-[0.1em] font-light text-white leading-tight">The VX-540<br /> Series</h1>
             </div>
             <p className="text-[14px] leading-relaxed tracking-wide text-gray-400 max-w-lg font-light uppercase">

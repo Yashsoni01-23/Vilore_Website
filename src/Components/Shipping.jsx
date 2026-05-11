@@ -14,7 +14,7 @@ const Shipping = () => {
           <div className="grid md:grid-cols-2 gap-16">
             <div className="space-y-8">
               <p className="text-gray-600 leading-relaxed font-light">
-                We understand that luxury cannot wait. Vilore partners with the world’s most 
+                We understand that luxury cannot wait. Viloze partners with the world’s most 
                 reliable logistics networks to ensure your signature scent reaches you in 
                 pristine condition, anywhere across the globe.
               </p>
@@ -41,7 +41,7 @@ const Shipping = () => {
               <h3 className="text-xl font-serif tracking-widest uppercase">Visit Our Storefront</h3>
               <p className="text-gray-400 text-sm font-light leading-loose">
                 Experience seamless shopping through our verified Amazon Storefront. 
-                Full protection, fast delivery, and authentic Vilore products.
+                Full protection, fast delivery, and authentic Viloze products.
               </p>
               <a 
                 href="https://amazon.in/vilore" 

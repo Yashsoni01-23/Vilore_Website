@@ -55,7 +55,7 @@ const FounderDrawer = ({ isOpen, onClose }) => {
                 <span className="text-[10px] font-black uppercase tracking-[0.2em]">Roots in Jhansi</span>
               </div>
               <p className="text-sm text-gray-600 font-light leading-loose tracking-wide">
-                Deeply rooted in the historical heart of <strong>Jhansi, Uttar Pradesh</strong>, the founders have built Vilore on the foundation of Indian heritage and global excellence.
+                Deeply rooted in the historical heart of <strong>Jhansi, Uttar Pradesh</strong>, the founders have built Viloze on the foundation of Indian heritage and global excellence.
               </p>
             </div>
 
@@ -65,7 +65,7 @@ const FounderDrawer = ({ isOpen, onClose }) => {
                 <span className="text-[10px] font-black uppercase tracking-[0.2em]">Transparent Legacy</span>
               </div>
               <p className="text-sm text-gray-600 font-light leading-loose tracking-wide">
-                Transparency is our invisible note. From ingredient sourcing to laboratory testing, Mr. & Mrs. Soni ensure that Vilore operates with absolute clarity and uncompromising integrity.
+                Transparency is our invisible note. From ingredient sourcing to laboratory testing, Mr. & Mrs. Soni ensure that Viloze operates with absolute clarity and uncompromising integrity.
               </p>
             </div>
 
@@ -82,7 +82,7 @@ const FounderDrawer = ({ isOpen, onClose }) => {
 
           {/* Bottom Branding */}
           <div className="text-center pt-8 opacity-40">
-             <p className="text-[8px] tracking-[0.8em] uppercase font-black text-gray-900">Vilore Private Circle</p>
+             <p className="text-[8px] tracking-[0.8em] uppercase font-black text-gray-900">Viloze Private Circle</p>
           </div>
         </div>
       </div>

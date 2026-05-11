@@ -39,7 +39,7 @@ const Navbar = () => {
             {/* 2. Center: Logo Section */}
             <Link to="/" className="flex flex-col items-center">
               <h1 className="text-2xl md:text-4xl font-serif tracking-[0.2em] font-black text-black leading-none">
-                VILORE
+                VILOZE
               </h1>
               <span className="text-[8px] tracking-[0.3em] uppercase font-medium text-gray-400 mt-1 italic">
                 Define Your Presence

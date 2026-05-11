@@ -17,7 +17,7 @@ const Boutique = () => {
       {/* Header section */}
       <div className="bg-[#f8fafc] py-20 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-serif tracking-[0.2em] text-gray-900 uppercase font-light">The Vilore Boutique</h1>
+          <h1 className="text-4xl font-serif tracking-[0.2em] text-gray-900 uppercase font-light">The Viloze Boutique</h1>
           <div className="w-16 h-[1px] bg-blue-500 mx-auto mt-6"></div>
           <p className="mt-6 text-gray-400 tracking-[0.4em] text-[10px] uppercase font-bold">Exclusive Fragrances & Artisan Care</p>
         </div>
@@ -31,7 +31,7 @@ const Boutique = () => {
             <div className="space-y-4">
               <h2 className="text-3xl font-serif text-gray-900 leading-snug">Crafting your <br/><span className="italic text-blue-600">unique signature.</span></h2>
               <p className="text-gray-500 leading-loose font-light">
-                At Vilore, we believe a fragrance is more than just a scent—it is a memory. 
+                At Viloze, we believe a fragrance is more than just a scent—it is a memory. 
                 Our Sagar & Surat laboratories work meticulously to bring you the highest 
                 concentration of artisan oils. Reach out to us for a personalized olfactory experience.
               </p>
@@ -72,7 +72,7 @@ const Boutique = () => {
                 <div>
                   <h4 className="text-[9px] uppercase tracking-[0.3em] text-gray-500 mb-1">Email Inquiry</h4>
                   <p className="text-sm font-light text-gray-300 border-b border-transparent group-hover/item:border-blue-400 inline-block transition">
-                    contact@vilore.com
+                    contact@viloze.com
                   </p>
                 </div>
               </a>
@@ -95,7 +95,7 @@ const Boutique = () => {
 
         {/* Minimal Footer Tag */}
         <div className="mt-40 text-center opacity-30">
-          <p className="text-[9px] tracking-[0.6em] text-gray-900 uppercase font-black">Vilore © 2026</p>
+          <p className="text-[9px] tracking-[0.6em] text-gray-900 uppercase font-black">Viloze © 2026</p>
         </div>
       </div>
     </div>

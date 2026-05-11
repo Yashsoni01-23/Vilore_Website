@@ -66,7 +66,7 @@ const Series540 = () => {
              <p className="relative z-10 text-center px-10 text-gray-400 font-light leading-loose tracking-widest">
                 EXTRAIT DE PARFUM <br/>
                 CONCENTRATION 25% <br/>
-                VILORE ARTISAN LABORATORY
+                VILOZE ARTISAN LABORATORY
              </p>
           </div>
         </div>

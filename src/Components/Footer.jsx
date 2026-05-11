@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Brand & Parent Info */}
           <div className="col-span-1 md:col-span-1 space-y-6">
             <div className="space-y-2">
-              <h2 className="text-2xl font-serif tracking-[0.2em] font-black text-gray-900 uppercase">VILORE</h2>
+              <h2 className="text-2xl font-serif tracking-[0.2em] font-black text-gray-900 uppercase">VILOZE</h2>
               <p className="text-[9px] tracking-[0.3em] text-blue-600 uppercase font-black italic">A Velziglobal Venture</p>
             </div>
             <p className="text-[11px] leading-relaxed text-gray-400 uppercase tracking-widest font-light">
@@ -48,7 +48,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><span className="text-[11px] text-gray-500 uppercase tracking-widest">Terms & Conditions</span></li>
               <li><span className="text-[11px] text-gray-500 uppercase tracking-widest">Privacy Policy</span></li>
-              <li><span className="text-[11px] text-gray-400 italic uppercase tracking-widest border-b border-gray-100 pb-1">Trademark: Nexvoy®</span></li>
+              <li><span className="text-[11px] text-gray-400 italic uppercase tracking-widest border-b border-gray-100 pb-1">Trademark: Viloze®</span></li>
             </ul>
           </div>
 
@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="pt-10 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="space-y-1 text-center md:text-left">
             <p className="text-[9px] tracking-[0.3em] text-gray-400 uppercase font-medium">
-              Vilore Artisan Laboratory © 2026. All Rights Reserved.
+              Viloze Artisan Laboratory © 2026. All Rights Reserved.
             </p>
             <p className="text-[9px] tracking-[0.3em] text-gray-300 uppercase font-medium">
               Member of the House of Velziglobal
