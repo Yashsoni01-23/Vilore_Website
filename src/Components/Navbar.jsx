@@ -16,9 +16,6 @@ const Navbar = () => {
     
     // Yeh mobile aur desktop dono par default mail app (Gmail waghera) safely open karega
     window.location.href = `mailto:${Email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`;
-
-    // Agar strictly sirf browser tab me web Gmail kholna ho, toh upar wali line hatakar ye use karein:
-    // window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${Email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (
@@ -101,7 +98,14 @@ const Navbar = () => {
             >
               <Fingerprint size={20} /> The Legacy (Velziglobal)
             </button>
-            <div className="pt-4 flex flex-col gap-6">
+            
+            {/* Added Boutique & Expert Talk in a nice flex container for Mobile */}
+            <div className="pt-6 flex flex-col gap-6">
+              <Link to="/boutique" onClick={() => setIsOpen(false)}>
+                <button className="w-full bg-black text-white py-3.5 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition shadow-lg">
+                  Boutique
+                </button>
+              </Link>
               <button onClick={handleExpertTalk} className="flex items-center gap-3 text-blue-600 font-bold uppercase text-xs tracking-widest">
                 <MessageCircle size={22} /> Talk to an Expert
               </button>

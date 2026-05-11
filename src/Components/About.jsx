@@ -39,7 +39,7 @@ const About = () => {
             </div>
             
             <p className="text-gray-600 leading-loose text-lg font-light italic">
-              "VILORE VX-540 is a premium inspired fragrance designed to **Define Your Presence**. Crafted for those who seek elegance and long-lasting performance, this unisex perfume delivers a luxurious experience at an accessible price."
+              "VILOZE VX-540 is a premium inspired fragrance designed to crafted for those who seek elegance and long-lasting performance, this unisex perfume delivers a luxurious experience at an accessible price."
             </p>
           </div>
           

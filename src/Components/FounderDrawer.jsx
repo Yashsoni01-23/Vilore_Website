@@ -52,7 +52,7 @@ const FounderDrawer = ({ isOpen, onClose }) => {
             <div className="space-y-3">
               <div className="flex items-center gap-2.5 text-blue-600">
                 <MapPin size={18} />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em]">Roots in Jhansi</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.2em]">India</span>
               </div>
               <p className="text-sm text-gray-600 font-light leading-loose tracking-wide">
                 Deeply rooted in the historical heart of <strong>Jhansi, Uttar Pradesh</strong>, the founders have built Viloze on the foundation of Indian heritage and global excellence.
@@ -82,7 +82,7 @@ const FounderDrawer = ({ isOpen, onClose }) => {
 
           {/* Bottom Branding */}
           <div className="text-center pt-8 opacity-40">
-             <p className="text-[8px] tracking-[0.8em] uppercase font-black text-gray-900">Viloze Private Circle</p>
+             <p className="text-[8px] tracking-[0.8em] uppercase font-black text-gray-900">Viloze Private Limited @2026</p>
           </div>
         </div>
       </div>

@@ -76,8 +76,8 @@ const Footer = () => {
           </div>
           
           <div className="flex gap-4">
-            <span className="text-[9px] tracking-[0.2em] text-gray-400 uppercase border border-gray-100 px-3 py-1">JH</span>
-            <span className="text-[9px] tracking-[0.2em] text-gray-400 uppercase border border-gray-100 px-3 py-1">GJ</span>
+            {/* <span className="text-[9px] tracking-[0.2em] text-gray-400 uppercase border border-gray-100 px-3 py-1">UP INDIA</span> */}
+            <span className="text-[9px] tracking-[0.2em] text-gray-400 uppercase border border-gray-100 px-3 py-1">INDIA</span>
             <span className="text-[9px] tracking-[0.2em] text-gray-400 uppercase border border-gray-100 px-3 py-1">USA</span>
           </div>
         </div>
