@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, MessageCircle, Info, Fingerprint } from 'lucide-react';
+import { Menu, X, MessageCircle, Fingerprint } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import FounderDrawer from './FounderDrawer';
 
@@ -7,16 +7,23 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); 
   const [isFounderOpen, setIsFounderOpen] = useState(false); 
   
-  const whatsappNumber = "919889908199"; 
+  // Yahan apni actual email ID daalein
+  const Email = "contact@viloze.com"; 
 
   const handleExpertTalk = () => {
-    const msg = encodeURIComponent("Hi Vilore, I'd like to speak with a fragrance expert regarding your collections.");
-    window.open(`https://wa.me/${whatsappNumber}?text=${msg}`, '_blank');
+    const subject = "Expert Consultation - Viloze";
+    const msg = "Hi Viloze, I'd like to speak with a fragrance expert regarding your collections.";
+    
+    // Yeh mobile aur desktop dono par default mail app (Gmail waghera) safely open karega
+    window.location.href = `mailto:${Email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`;
+
+    // Agar strictly sirf browser tab me web Gmail kholna ho, toh upar wali line hatakar ye use karein:
+    // window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${Email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (
     <>
-      {/* --- VELZIGLOBAL Top Bar: Highlights the Parent Company without taking space from links --- */}
+      {/* --- VELZIGLOBAL Top Bar --- */}
       <div className="bg-[#060a11] text-white py-1.5 text-center">
         <p className="text-[8px] md:text-[9px] tracking-[0.5em] uppercase font-bold opacity-80">
           The House of <span className="text-blue-500">Velziglobal</span>
@@ -27,7 +34,7 @@ const Navbar = () => {
         <div className="max-w-[1600px] mx-auto px-4 lg:px-10">
           <div className="flex justify-between items-center h-16">
             
-            {/* 1. Left: All 5 Main Links Kept Intact */}
+            {/* 1. Left: Main Links */}
             <div className="hidden xl:flex items-center space-x-6">
               <Link to="/" className="text-[10px] font-bold uppercase tracking-widest text-gray-800 hover:text-blue-600 transition">Home</Link>
               <Link to="/vx540" className="text-[10px] font-bold uppercase tracking-widest text-gray-800 hover:text-blue-600 transition">VX-540</Link>
@@ -46,7 +53,7 @@ const Navbar = () => {
               </span>
             </Link>
 
-            {/* 3. Right: Legacy, Talk & Boutique Kept Intact */}
+            {/* 3. Right: Legacy, Talk & Boutique */}
             <div className="hidden lg:flex items-center space-x-6">
               <button 
                 onClick={() => setIsFounderOpen(true)}
@@ -80,7 +87,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Overlay: Everything included here too */}
+        {/* Mobile Menu Overlay */}
         {isOpen && (
           <div className="lg:hidden bg-white border-t border-gray-100 p-8 space-y-6 h-screen shadow-2xl overflow-y-auto">
             <Link to="/" onClick={() => setIsOpen(false)} className="block text-sm font-bold uppercase tracking-[0.2em] text-gray-900 border-b border-gray-50 pb-2">Home</Link>
