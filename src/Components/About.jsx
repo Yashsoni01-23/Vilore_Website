@@ -17,7 +17,7 @@ const About = () => {
       </div>
 
       {/* 2. Brand Identity Header - Text Moved Here */}
-      <div className="max-w-7xl mx-auto px-6 pt-20 pb-10 text-center space-y-4">
+      {/* <div className="max-w-7xl mx-auto px-6 pt-20 pb-10 text-center space-y-4">
           <h1 className="text-5xl md:text-7xl font-serif tracking-tighter text-gray-900 italic">
             VILORE
           </h1>
@@ -25,7 +25,7 @@ const About = () => {
           <p className="text-blue-600 tracking-[0.6em] text-[10px] uppercase font-black">
             Define Your Presence
           </p>
-      </div>
+      </div> */}
 
       {/* 3. Core Narrative - The VX-540 Philosophy */}
       <div className="max-w-7xl mx-auto px-6 py-20 text-gray-800">
